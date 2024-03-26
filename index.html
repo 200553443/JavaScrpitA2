@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoothie Machine</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Build Your Smoothie</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Choose Ingredients</h2>
+            <form id="smoothie-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <fieldset>
+                    <legend>Fruits:</legend>
+                    <label><input type="checkbox" name="ingredients" value="Banana"> Banana</label>
+                    <label><input type="checkbox" name="ingredients" value="Strawberry"> Strawberry</label>
+                    <label><input type="checkbox" name="ingredients" value="Blueberry"> Blueberry</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Liquid Base:</legend>
+                    <label><input type="radio" name="base" value="Milk" required> Milk</label>
+                    <label><input type="radio" name="base" value="Yogurt" required> Yogurt</label>
+                    <label><input type="radio" name="base" value="Coconut Water" required> Coconut Water</label>
+                </fieldset>
+
+                <button type="button" id="order-btn">Place Order</button>
+            </form>
+        </section>
+        <section id="smoothie-description">
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact us at: smoothiemachine.com</p>
+        <p>Give us a call at +1(234)-567-9999</p>
+    </footer>
+</body>
+</html>
